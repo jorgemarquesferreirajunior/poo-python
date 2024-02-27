@@ -1,6 +1,9 @@
 import json
-from ex_salvar_classe_em_json_a import Pessoa, DESTINO
+from ex_salvar_classe_em_json_a import Pessoa, DESTINO, fazer_dump
 
+
+# Assim a etapa FAZENDO DUMP sera realizada apenas quando a funcao fazer_dump for chamada:
+fazer_dump()
 
 with open(DESTINO, "r") as arquivo:
     pessoas = json.load(arquivo)
