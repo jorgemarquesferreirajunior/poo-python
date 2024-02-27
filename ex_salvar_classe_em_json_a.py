@@ -16,5 +16,7 @@ p3 = Pessoa("Helena", 13)
 
 bd = [vars(p1), vars(p2), vars(p3)]
 
+# Desse modo quando importarmos esse script para outro, a etapa FAZENDO DUMP sera realizada automaticamente
 with open(DESTINO, "w") as arquivo:
+    print("FAZENDO DUMP")
     json.dump(bd, arquivo, ensure_ascii=False, indent=2)
