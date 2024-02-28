@@ -16,6 +16,10 @@ class Pessoa:
     def criar_com_50_anos(cls, nome):
         return cls(nome, 50)
 
+    @classmethod
+    def criar_pessoa_anonima(cls, idade):
+        return cls("Anonimo", idade)
+
 
 print(Pessoa.ano)
 
@@ -25,5 +29,7 @@ Pessoa.metodo(p1)
 Pessoa.metodo_de_classe()
 
 p2 = Pessoa.criar_com_50_anos("Helena")
-
 print(p2.nome, p2.idade)
+
+p3 = Pessoa.criar_pessoa_anonima(15)
+print(p3.nome, p3.idade)
