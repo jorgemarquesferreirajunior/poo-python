@@ -1,5 +1,5 @@
 import json
-from ex_salvar_classe_em_json_a import Pessoa, DESTINO, fazer_dump
+from aula001_salvar_classe_em_json_a import Pessoa, DESTINO, fazer_dump
 
 
 # Assim a etapa FAZENDO DUMP sera realizada apenas quando a funcao fazer_dump for chamada:
